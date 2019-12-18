@@ -1,0 +1,23 @@
+{
+  "name": "maxminesnodejsapi",
+  "version": "1.0.1",
+  "description": "MaxMines API NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "maxmines",
+    "mining",
+    "api"
+  ],
+  "author": "lesongvi",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.83.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lesongvi/maxminesnodejsapi"
+  }
+}
