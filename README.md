@@ -1,5 +1,5 @@
 # maxminesnodejsapi
-MaxMines API NodeJS
+[MaxMines API](http://maxmines.com/documentation/http-api) NodeJS
 ## Cách dùng
 ```
 const MaxMinesAPI = require('./app');
