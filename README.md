@@ -62,3 +62,5 @@ maxminesapi.history("BEGIN_TIME", "END_TIME", res => {
     console.log(res);
 })
 ```
+
+Xem chi tiết tại [HTTP API](https://maxmines.com/documentation/http-api)
