@@ -85,7 +85,8 @@ class MaxMinesAPI {
     top(count, order, callback) {
         MaxMinesAPI.APIRequest('user/top', false, {
             secret: this.secret_key,
-            count: count
+            count: count,
+            order: order
         }, callback);
     }
 
@@ -173,7 +174,19 @@ class MaxMinesAPI {
         }, callback);
     }
 
-
+    /**
+     * @description Nhận lịch sử hàng giờ của tổng số hash và hash/s trong một khoảng thời gian hoặc tất cả thời gian của người dùng nào đó.
+     * @param begin Unix timestamp bắt đầu của giai đoạn bạn muốn lấy.
+     * @param end Unix timestamp kết thúc của giai đoạn bạn muốn lấy.
+     * @param callback Callback
+     */
+    history(begin, end, callback) {
+        MaxMinesAPI.APIRequest('stats/history', false, {
+            secret: this.secret_key,
+            begin: begin,
+            end: end
+        }, callback);
+    }
 }
 
 module.exports = MaxMinesAPI;
